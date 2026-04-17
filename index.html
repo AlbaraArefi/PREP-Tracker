@@ -28,7 +28,6 @@
   }
   html { -webkit-text-size-adjust: 100%; }
   body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; -webkit-font-smoothing: antialiased; }
-
   #loginScreen { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem 1rem; }
   .login-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 2.5rem 2rem; width: 100%; max-width: 400px; text-align: center; }
   .login-title { font-family: 'DM Mono', monospace; font-size: clamp(28px,8vw,42px); font-weight: 500; letter-spacing: clamp(4px,2vw,8px); margin-bottom: 8px; }
@@ -39,15 +38,8 @@
   .login-btn { width: 100%; padding: 13px; font-size: 15px; font-weight: 500; background: var(--green); color: #fff; border: none; border-radius: var(--radius); cursor: pointer; font-family: 'DM Sans', sans-serif; -webkit-tap-highlight-color: transparent; min-height: 48px; }
   .login-btn:active { opacity: 0.85; }
   .login-error { font-size: 12px; color: #E24B4A; margin-top: 8px; min-height: 18px; }
-  .existing-users { margin-top: 1.5rem; text-align: left; }
-  .existing-label { font-size: 11px; color: var(--faint); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
-  .user-pill-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
-  .user-pill { padding: 6px 12px; border: 0.5px solid var(--border-strong); border-radius: 20px; font-size: 13px; color: var(--muted); cursor: pointer; background: var(--surface2); -webkit-tap-highlight-color: transparent; }
-  .user-pill:active { background: var(--green-bg); color: var(--green-text); border-color: var(--green-border); }
-
   #mainApp { display: none; padding: 2rem 1rem; }
   .app { max-width: 860px; margin: 0 auto; }
-
   .sync-bar { display: flex; align-items: center; justify-content: space-between; gap: 7px; font-size: 12px; color: var(--muted); margin-bottom: 1rem; padding: 8px 14px; background: var(--surface); border: 0.5px solid var(--border); border-radius: 8px; }
   .sync-left { display: flex; align-items: center; gap: 7px; }
   .sync-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--faint); flex-shrink: 0; transition: background 0.3s; }
@@ -57,20 +49,17 @@
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
   .switch-btn { font-size: 11px; color: var(--faint); background: none; border: 0.5px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; font-family: 'DM Sans', sans-serif; -webkit-tap-highlight-color: transparent; white-space: nowrap; }
   .switch-btn:active { color: var(--green-text); border-color: var(--green-border); }
-
   .top-header { text-align: center; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 0.5px solid var(--border); }
   .top-header h1 { font-family: 'DM Mono', monospace; font-size: clamp(28px,10vw,48px); font-weight: 500; letter-spacing: clamp(4px,2vw,8px); line-height: 1; margin-bottom: 6px; }
   .top-header p { font-size: 13px; color: var(--muted); }
   .user-greeting { display: inline-block; margin-top: 8px; font-size: 13px; color: var(--green-text); background: var(--green-bg); border: 0.5px solid var(--green-border); border-radius: 20px; padding: 4px 14px; }
   .reset-btn { margin-top: 12px; font-size: 11px; color: var(--faint); background: none; border: 0.5px solid var(--border); border-radius: 6px; padding: 6px 12px; cursor: pointer; font-family: 'DM Sans', sans-serif; -webkit-tap-highlight-color: transparent; min-height: 36px; }
   .reset-btn:active { color: #c0392b; border-color: #c0392b; }
-
   .global-stats { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; margin-bottom: 1.5rem; }
   @media(min-width:500px){ .global-stats { grid-template-columns: repeat(4,minmax(0,1fr)); } }
   .stat-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius); padding: 12px 14px; }
   .stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; }
   .stat-value { font-family: 'DM Mono', monospace; font-size: 22px; font-weight: 500; }
-
   .year-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 8px; }
   .year-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; cursor: pointer; -webkit-tap-highlight-color: transparent; user-select: none; min-height: 56px; }
   .year-header:active { background: var(--surface2); }
@@ -103,7 +92,6 @@
   .session-sub { font-size: 10px; color: var(--faint); display: block; margin-top: 2px; font-family: 'DM Mono', monospace; }
   .session-item.checked .session-sub { color: #639922; }
   .remainder-note { font-size: 11px; color: var(--faint); margin-top: 10px; font-style: italic; }
-
   #loadingOverlay { position: fixed; inset: 0; background: var(--bg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; z-index: 100; transition: opacity 0.3s; }
   #loadingOverlay.hidden { opacity: 0; pointer-events: none; }
   .loading-title { font-family: 'DM Mono', monospace; font-size: 28px; letter-spacing: 6px; }
@@ -113,13 +101,11 @@
 </style>
 </head>
 <body>
-
 <div id="loadingOverlay">
   <div class="loading-title">PREP</div>
   <div class="spinner"></div>
   <div class="loading-sub">Loading…</div>
 </div>
-
 <div id="loginScreen" style="display:none">
   <div class="login-card">
     <div class="login-title">PREP</div>
@@ -128,13 +114,8 @@
     <input class="login-input" id="nameInput" type="text" placeholder="e.g. Albara" autocomplete="off" autocorrect="off" spellcheck="false" />
     <button class="login-btn" onclick="handleLogin()">Continue →</button>
     <div class="login-error" id="loginError"></div>
-    <div class="existing-users" id="existingUsers" style="display:none">
-      <div class="existing-label">or pick your name</div>
-      <div class="user-pill-wrap" id="userPills"></div>
-    </div>
   </div>
 </div>
-
 <div id="mainApp">
   <div class="app">
     <div class="sync-bar">
@@ -146,7 +127,7 @@
     </div>
     <div class="top-header">
       <h1>PREP</h1>
-      <p>Study tracker &nbsp;·&nbsp; 2018–2025 &nbsp;·&nbsp; 10 questions per session</p>
+      <p>Study tracker · 2018–2025 · 10 questions per session</p>
       <div class="user-greeting" id="userGreeting"></div>
       <br>
       <button class="reset-btn" id="resetBtn">Reset my progress</button>
@@ -160,7 +141,6 @@
     <div id="yearsContainer"></div>
   </div>
 </div>
-
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 <script>
@@ -172,68 +152,23 @@ firebase.initializeApp({
   messagingSenderId: "793647827235",
   appId: "1:793647827235:web:dea0b25f77295e1c0a6496"
 });
-const db = firebase.firestore();
-const PREPS = [
-  {year:2025,total:253},{year:2024,total:267},{year:2023,total:269},
-  {year:2022,total:247},{year:2021,total:247},{year:2020,total:245},
-  {year:2019,total:291},{year:2018,total:277}
-];
-const QS=10, GRAND_TOTAL=2096, USER_KEY='prep_username';
-let currentUser=null, unsubscribe=null;
+const db=firebase.firestore();
+const PREPS=[{year:2025,total:253},{year:2024,total:267},{year:2023,total:269},{year:2022,total:247},{year:2021,total:247},{year:2020,total:245},{year:2019,total:291},{year:2018,total:277}];
+const QS=10,GRAND_TOTAL=2096,USER_KEY='prep_username';
+let currentUser=null,unsubscribe=null;
 const state={};
-PREPS.forEach(p=>{
-  const full=Math.floor(p.total/QS),rem=p.total%QS,total=rem>0?full+1:full;
-  state[p.year]={full,rem,total,qtotal:p.total,checked:Array(total).fill(false)};
-});
-
-function setSyncStatus(s,text){
-  document.getElementById('syncDot').className='sync-dot '+s;
-  document.getElementById('syncText').textContent=text;
-}
-
-// Build UI
+PREPS.forEach(p=>{const full=Math.floor(p.total/QS),rem=p.total%QS,total=rem>0?full+1:full;state[p.year]={full,rem,total,qtotal:p.total,checked:Array(total).fill(false)};});
+function setSyncStatus(s,text){document.getElementById('syncDot').className='sync-dot '+s;document.getElementById('syncText').textContent=text;}
 const container=document.getElementById('yearsContainer');
 PREPS.forEach(p=>{
-  const y=p.year,s=state[y];
-  const ycard=document.createElement('div');
+  const y=p.year,s=state[y],ycard=document.createElement('div');
   ycard.className='year-card';ycard.id='yr-'+y;
   let html='';
-  for(let i=0;i<s.total;i++){
-    const start=i*QS+1,isLast=i===s.total-1&&s.rem>0,end=isLast?p.total:(i+1)*QS,qc=isLast?s.rem:QS;
-    html+=`<div class="session-item${isLast?' last-session':''}" id="si-${y}-${i}" onclick="toggleSession(${y},${i})">
-      <div class="custom-check"><span class="check-icon" style="display:none">✓</span></div>
-      <div><span class="session-label">Session ${i+1}</span><span class="session-sub">Q${start}–Q${end}${isLast?' ('+qc+'q)':''}</span></div>
-    </div>`;
-  }
+  for(let i=0;i<s.total;i++){const start=i*QS+1,isLast=i===s.total-1&&s.rem>0,end=isLast?p.total:(i+1)*QS,qc=isLast?s.rem:QS;html+=`<div class="session-item${isLast?' last-session':''}" id="si-${y}-${i}" onclick="toggleSession(${y},${i})"><div class="custom-check"><span class="check-icon" style="display:none">✓</span></div><div><span class="session-label">Session ${i+1}</span><span class="session-sub">Q${start}–Q${end}${isLast?' ('+qc+'q)':''}</span></div></div>`;}
   const remNote=s.rem>0?`<p class="remainder-note">Last session has ${s.rem} questions instead of 10</p>`:'';
-  ycard.innerHTML=`
-    <div class="year-header" onclick="toggleYear(${y})">
-      <div class="year-left"><span class="year-title">PREP ${y}</span><span class="year-qtotal">${p.qtotal} questions · ${s.total} sessions</span></div>
-      <div class="year-right"><span class="year-badge">0 / ${s.total} sessions</span><span class="chevron">▼</span></div>
-    </div>
-    <div class="pbar-wrap"><div class="pbar" style="width:0%"></div></div>
-    <div class="sessions-container" id="sc-${y}"><div class="sessions-grid">${html}</div>${remNote}</div>`;
+  ycard.innerHTML=`<div class="year-header" onclick="toggleYear(${y})"><div class="year-left"><span class="year-title">PREP ${y}</span><span class="year-qtotal">${p.qtotal} questions · ${s.total} sessions</span></div><div class="year-right"><span class="year-badge">0 / ${s.total} sessions</span><span class="chevron">▼</span></div></div><div class="pbar-wrap"><div class="pbar" style="width:0%"></div></div><div class="sessions-container" id="sc-${y}"><div class="sessions-grid">${html}</div>${remNote}</div>`;
   container.appendChild(ycard);
 });
-
-async function loadExistingUsers(){
-  try{
-    const snap=await db.collection('users').get();
-    const names=snap.docs.map(d=>d.id).sort();
-    if(names.length>0){
-      document.getElementById('existingUsers').style.display='block';
-      const el=document.getElementById('userPills');
-      el.innerHTML='';
-      names.forEach(name=>{
-        const pill=document.createElement('div');
-        pill.className='user-pill';pill.textContent=name;
-        pill.onclick=()=>{document.getElementById('nameInput').value=name;handleLogin();};
-        el.appendChild(pill);
-      });
-    }
-  }catch(e){}
-}
-
 function handleLogin(){
   const raw=document.getElementById('nameInput').value.trim();
   if(!raw){document.getElementById('loginError').textContent='Please enter your name.';return;}
@@ -241,22 +176,16 @@ function handleLogin(){
   document.getElementById('loginError').textContent='';
   startSession(name);
 }
-
 document.getElementById('nameInput').addEventListener('keydown',e=>{if(e.key==='Enter')handleLogin();});
-
 function switchUser(){
   if(unsubscribe){unsubscribe();unsubscribe=null;}
-  localStorage.removeItem(USER_KEY);
-  currentUser=null;
+  localStorage.removeItem(USER_KEY);currentUser=null;
   document.getElementById('mainApp').style.display='none';
   document.getElementById('loginScreen').style.display='flex';
   document.getElementById('nameInput').value='';
-  loadExistingUsers();
 }
-
 function startSession(name){
-  currentUser=name;
-  localStorage.setItem(USER_KEY,name);
+  currentUser=name;localStorage.setItem(USER_KEY,name);
   document.getElementById('loginScreen').style.display='none';
   document.getElementById('mainApp').style.display='block';
   document.getElementById('userGreeting').textContent='👋 '+name;
@@ -269,105 +198,23 @@ function startSession(name){
     setTimeout(()=>{document.getElementById('loadingOverlay').style.display='none';},350);
     setSyncStatus('synced','Synced · '+name);
     if(unsubscribe)unsubscribe();
-    unsubscribe=docRef.onSnapshot(snap=>{
-      if(snap.exists){applyData(snap.data());setSyncStatus('synced','Synced · '+name);}
-    });
-  }).catch(()=>{
-    document.getElementById('loadingOverlay').classList.add('hidden');
-    setSyncStatus('error','Could not connect');
-  });
+    unsubscribe=docRef.onSnapshot(snap=>{if(snap.exists){applyData(snap.data());setSyncStatus('synced','Synced · '+name);}});
+  }).catch(()=>{document.getElementById('loadingOverlay').classList.add('hidden');setSyncStatus('error','Could not connect');});
   document.getElementById('resetBtn').onclick=()=>{
     if(!confirm('Reset ALL your progress, '+name+'? Cannot be undone.'))return;
-    docRef.delete().then(()=>{
-      PREPS.forEach(p=>{state[p.year].checked=Array(state[p.year].total).fill(false);});
-      PREPS.forEach(p=>refreshYear(p.year));
-      updateGlobal();
-      setSyncStatus('synced','Synced · '+name);
-    });
+    docRef.delete().then(()=>{PREPS.forEach(p=>{state[p.year].checked=Array(state[p.year].total).fill(false);});PREPS.forEach(p=>refreshYear(p.year));updateGlobal();setSyncStatus('synced','Synced · '+name);});
   };
 }
-
-function applyData(data){
-  PREPS.forEach(p=>{
-    const s=state[p.year];
-    s.checked=data&&data[p.year]?Array(s.total).fill(false).map((_,i)=>data[p.year][i]||false):Array(s.total).fill(false);
-    refreshYear(p.year);
-  });
-  updateGlobal();
-}
-
-function updateGlobal(){
-  let ds=0,dq=0;
-  PREPS.forEach(p=>{const s=state[p.year];s.checked.forEach((c,i)=>{if(c){ds++;dq+=(i===s.total-1&&s.rem>0)?s.rem:QS;}});});
-  document.getElementById('gDone').textContent=ds;
-  document.getElementById('gQ').textContent=dq.toLocaleString();
-  document.getElementById('gPct').textContent=Math.round(dq/GRAND_TOTAL*100)+'%';
-}
-
-function refreshYear(y){
-  const s=state[y],done=s.checked.filter(Boolean).length,pct=Math.round(done/s.total*100);
-  const badge=document.querySelector('#yr-'+y+' .year-badge');
-  if(badge){badge.textContent=done+' / '+s.total+' sessions';badge.className='year-badge'+(done===s.total?' done':done>0?' going':'');}
-  const pbar=document.querySelector('#yr-'+y+' .pbar');
-  if(pbar)pbar.style.width=pct+'%';
-  for(let i=0;i<s.total;i++){
-    const el=document.getElementById('si-'+y+'-'+i);if(!el)continue;
-    const isLast=s.rem>0&&i===s.total-1;
-    el.className='session-item'+(s.checked[i]?' checked':'')+(isLast?' last-session':'');
-    const ci=el.querySelector('.check-icon');if(ci)ci.style.display=s.checked[i]?'block':'none';
-    const cc=el.querySelector('.custom-check');
-    if(cc){cc.style.background=s.checked[i]?'var(--green)':'var(--surface)';cc.style.borderColor=s.checked[i]?'var(--green)':'var(--border-strong)';}
-  }
-}
-
+function applyData(data){PREPS.forEach(p=>{const s=state[p.year];s.checked=data&&data[p.year]?Array(s.total).fill(false).map((_,i)=>data[p.year][i]||false):Array(s.total).fill(false);refreshYear(p.year);});updateGlobal();}
+function updateGlobal(){let ds=0,dq=0;PREPS.forEach(p=>{const s=state[p.year];s.checked.forEach((c,i)=>{if(c){ds++;dq+=(i===s.total-1&&s.rem>0)?s.rem:QS;}});});document.getElementById('gDone').textContent=ds;document.getElementById('gQ').textContent=dq.toLocaleString();document.getElementById('gPct').textContent=Math.round(dq/GRAND_TOTAL*100)+'%';}
+function refreshYear(y){const s=state[y],done=s.checked.filter(Boolean).length,pct=Math.round(done/s.total*100);const badge=document.querySelector('#yr-'+y+' .year-badge');if(badge){badge.textContent=done+' / '+s.total+' sessions';badge.className='year-badge'+(done===s.total?' done':done>0?' going':'');}const pbar=document.querySelector('#yr-'+y+' .pbar');if(pbar)pbar.style.width=pct+'%';for(let i=0;i<s.total;i++){const el=document.getElementById('si-'+y+'-'+i);if(!el)continue;const isLast=s.rem>0&&i===s.total-1;el.className='session-item'+(s.checked[i]?' checked':'')+(isLast?' last-session':'');const ci=el.querySelector('.check-icon');if(ci)ci.style.display=s.checked[i]?'block':'none';const cc=el.querySelector('.custom-check');if(cc){cc.style.background=s.checked[i]?'var(--green)':'var(--surface)';cc.style.borderColor=s.checked[i]?'var(--green)':'var(--border-strong)';}}}
 let saveTimeout=null;
-function scheduleSave(){
-  setSyncStatus('syncing','Saving…');
-  clearTimeout(saveTimeout);
-  saveTimeout=setTimeout(()=>{
-    const out={};PREPS.forEach(p=>{out[p.year]=state[p.year].checked;});
-    db.collection('users').doc(currentUser).set(out)
-      .then(()=>setSyncStatus('synced','Synced · '+currentUser))
-      .catch(()=>setSyncStatus('error','Save failed'));
-  },600);
-}
-
-function toggleSession(y,i){
-  state[y].checked[i]=!state[y].checked[i];
-  const s=state[y],isLast=s.rem>0&&i===s.total-1;
-  const el=document.getElementById('si-'+y+'-'+i);
-  if(el){
-    el.className='session-item'+(s.checked[i]?' checked':'')+(isLast?' last-session':'');
-    const ci=el.querySelector('.check-icon');if(ci)ci.style.display=s.checked[i]?'block':'none';
-    const cc=el.querySelector('.custom-check');
-    if(cc){cc.style.background=s.checked[i]?'var(--green)':'var(--surface)';cc.style.borderColor=s.checked[i]?'var(--green)':'var(--border-strong)';}
-  }
-  const done=s.checked.filter(Boolean).length;
-  const badge=document.querySelector('#yr-'+y+' .year-badge');
-  if(badge){badge.textContent=done+' / '+s.total+' sessions';badge.className='year-badge'+(done===s.total?' done':done>0?' going':'');}
-  const pbar=document.querySelector('#yr-'+y+' .pbar');
-  if(pbar)pbar.style.width=Math.round(done/s.total*100)+'%';
-  updateGlobal();scheduleSave();
-}
-
-function toggleYear(y){
-  const cont=document.getElementById('sc-'+y),chev=document.querySelector('#yr-'+y+' .chevron'),open=cont.classList.contains('open');
-  cont.className='sessions-container'+(open?'':' open');
-  if(chev)chev.className='chevron'+(open?'':' open');
-}
-
+function scheduleSave(){setSyncStatus('syncing','Saving…');clearTimeout(saveTimeout);saveTimeout=setTimeout(()=>{const out={};PREPS.forEach(p=>{out[p.year]=state[p.year].checked;});db.collection('users').doc(currentUser).set(out).then(()=>setSyncStatus('synced','Synced · '+currentUser)).catch(()=>setSyncStatus('error','Save failed'));},600);}
+function toggleSession(y,i){state[y].checked[i]=!state[y].checked[i];const s=state[y],isLast=s.rem>0&&i===s.total-1;const el=document.getElementById('si-'+y+'-'+i);if(el){el.className='session-item'+(s.checked[i]?' checked':'')+(isLast?' last-session':'');const ci=el.querySelector('.check-icon');if(ci)ci.style.display=s.checked[i]?'block':'none';const cc=el.querySelector('.custom-check');if(cc){cc.style.background=s.checked[i]?'var(--green)':'var(--surface)';cc.style.borderColor=s.checked[i]?'var(--green)':'var(--border-strong)';}}const done=s.checked.filter(Boolean).length;const badge=document.querySelector('#yr-'+y+' .year-badge');if(badge){badge.textContent=done+' / '+s.total+' sessions';badge.className='year-badge'+(done===s.total?' done':done>0?' going':'');}const pbar=document.querySelector('#yr-'+y+' .pbar');if(pbar)pbar.style.width=Math.round(done/s.total*100)+'%';updateGlobal();scheduleSave();}
+function toggleYear(y){const cont=document.getElementById('sc-'+y),chev=document.querySelector('#yr-'+y+' .chevron'),open=cont.classList.contains('open');cont.className='sessions-container'+(open?'':' open');if(chev)chev.className='chevron'+(open?'':' open');}
 const saved=localStorage.getItem(USER_KEY);
-if(saved){
-  document.getElementById('loginScreen').style.display='none';
-  startSession(saved);
-}else{
-  document.getElementById('loadingOverlay').classList.add('hidden');
-  setTimeout(()=>{
-    document.getElementById('loadingOverlay').style.display='none';
-    document.getElementById('loginScreen').style.display='flex';
-    loadExistingUsers();
-  },300);
-}
+if(saved){document.getElementById('loginScreen').style.display='none';startSession(saved);}
+else{document.getElementById('loadingOverlay').classList.add('hidden');setTimeout(()=>{document.getElementById('loadingOverlay').style.display='none';document.getElementById('loginScreen').style.display='flex';},300);}
 </script>
 </body>
 </html>
